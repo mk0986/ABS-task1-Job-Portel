@@ -1,0 +1,235 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin: 0 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #f39c12;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #fff;
+}
+
+.job-section {
+    padding: 50px 30px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.job-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.job {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 280px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2C3E50;
+}
+
+.job p {
+    margin-bottom: 10px;
+    color: #7f8c8d;
+}
+
+.apply-btn {
+    background-color: #f39c12;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.apply-btn:hover {
+    background-color: #e67e22;
+}
+
+.post-job-section {
+    padding: 50px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.post-job-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+.job-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-form label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2C3E50;
+}
+
+.job-form input,
+.job-form textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.job-form input:focus,
+.job-form textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+}
+
+.job-form button {
+    background-color: #f39c12;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.job-form button:hover {
+    background-color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .job-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo h1 {
+        font-size: 20px;
+    }
+
+    .job-section h2, .post-job-section h2 {
+        font-size: 2rem;
+    }
+
+    .job-list {
+        padding-top: 20px;
+    }
+
+    .job-form {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+

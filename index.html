@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Naukri</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#section1">Available Jobs</a></li>
+                <li><a href="#section2">Post a Job</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="section1" class="job-section">
+        <h2>Available Jobs</h2>
+        <div class="job-list">
+            <div class="job">
+                <h3>Web Developer</h3>
+                <p>Location: Noida/Gurugram</p>
+                <p>Experience: Freshers</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job">
+                <h3>Graphic Designer</h3>
+                <p>Location: Banglore</p>
+                <p>Experience: 2+ years</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job">
+                <h3>Product Manager</h3>
+                <p>Location: Hyderabad</p>
+                <p>Experience: 3+ years</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job">
+                <h3>UI/UX Designer</h3>
+                <p>Location: Delhi</p>
+                <p>Experience: 5+ years</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job">
+                <h3>Data Analyst</h3>
+                <p>Location: Hyderabad/Noida</p>
+                <p>Experience: Freshers</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section id="section2" class="post-job-section">
+        <h2>Post a Job</h2>
+        <form class="job-form">
+            <label for="job-title">Job Title</label>
+            <input type="text" id="job-title" name="job-title" required>
+            <label for="job-location">Job Location</label>
+            <input type="text" id="job-location" name="job-location" required>
+            <label for="job-description">Job Description</label>
+            <textarea id="job-description" name="job-description" rows="4" required></textarea>
+            <button type="submit" class="submit-btn">Post Job</button>
+        </form>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
